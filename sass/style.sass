@@ -1,0 +1,87 @@
+@import 
+    "https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+
+$font-size: 1em
+$main-color: #73b7e1
+$cta-button-color: #d469a5
+$cta-button-color-hover: #fa75ad
+$nav-color: rgba(256,256,256,0.5)
+$color: white
+
+@font-face 
+    font-family: 'Open Sans', sans-serif
+@mixin textDecoration()
+    text-decoration: none
+@mixin display()
+    display: inline-block
+@mixin fontSize($font-size)
+    font-size: $font-size
+
+
+
+body 
+    background-color: $main-color
+    color: $color
+    margin: 0 auto
+nav 
+    text-align: center
+
+
+.main-nav 
+    li 
+        @include display
+        @include fontSize($font-size*1.2)
+        padding: 5px 30px
+        font-weight: 400
+        margin: 10px
+
+
+a 
+    color: #472063
+    @include textDecoration
+
+
+a:hover 
+    text-decoration: underline
+
+
+.half-column 
+    @include display
+    width: 40%
+    padding: 50px 0px 10px 20px
+
+
+.landing-copy 
+    margin-left: 70px
+
+
+.landing-copy 
+    p 
+        @include fontSize($font-size*1.2)
+        line-height: 1.4em 
+
+
+.landing-copy 
+    h1 
+        @include fontSize($font-size*3)
+        line-height: 1.2em
+
+
+.cta-button 
+    border: 2px solid $color
+    border-radius: 50px
+    background-color: $cta-button-color
+    color: $color
+    font-weight: 700
+    padding: 5px 20px
+a
+    .cta-button:hover 
+        background-color: $cta-button-color-hover
+        @include textDecoration()
+.right 
+    float: right
+nav 
+    margin-top: 6em
+    background-color: $nav-color
+    height: 3.75em
+    padding: 0px 40px
