@@ -1,5 +1,9 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@font-face {
   font-family: 'Open Sans', sans-serif;
+}
+
+body {
   background-color: #73b7e1;
   color: white;
   margin: 0 auto;
@@ -11,9 +15,9 @@ nav {
 
 .main-nav li {
   display: inline-block;
+  font-size: 1.2em;
   padding: 5px 30px;
   font-weight: 400;
-  font-size: 1.2em;
   margin: 10px;
 }
 
@@ -37,7 +41,7 @@ a:hover {
 }
 
 .landing-copy p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.4em;
 }
 
